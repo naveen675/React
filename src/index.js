@@ -66,24 +66,55 @@ import "./styles.css";
 //   </>
 // );
 
-function Numbering(props) {
-  return <li>{props.value}</li>;
+// function Numbering(props) {
+//   return <li>{props.value}</li>;
+// }
+
+// const list = [1, 2, 3, 4, 5, 6];
+// const list1 = ["a", "b", "c", "d"];
+
+// function ListItems(props) {
+//   const numbers = props.numbers;
+//   return numbers.map((number) => (
+//     <Numbering key={number.toString()} value={number} />
+//   ));
+// }
+
+// // const items = <ListItems numbers={list} />;
+
+// const body = (
+//   <>
+//     <ol>
+//       {list.map((number) => (
+//         <li>{number}</li>
+//       ))}
+//     </ol>
+//     <ol>
+//       {list1.map((number) => (
+//         <li>{number}</li>
+//       ))}
+//     </ol>
+//   </>
+// );
+
+// ReactDOM.render(body, document.getElementById("root"));
+
+function Greetings() {
+  return <h2>Welcome Back !</h2>;
 }
 
-const list = [1, 2, 3, 4, 5, 6];
-
-function ListItems(props) {
-  const numbers = props.numbers;
-  return numbers.map((number) => (
-    <Numbering key={number.toString()} value={number} />
-  ));
+function Guest() {
+  return <h2>Signup</h2>;
 }
 
-// const items = <ListItems numbers={list} />;
+function Login(props) {
+  const isLogged = props.login;
+  if (isLogged) {
+    return <Greetings />;
+  }
+  return <Guest />;
+}
 
-ReactDOM.render(
-  <ol>
-    <ListItems numbers={list} />
-  </ol>,
-  document.getElementById("root")
-);
+const element = <Login login={true} />;
+
+ReactDOM.render(element, document.getElementById("root"));

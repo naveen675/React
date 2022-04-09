@@ -107,14 +107,14 @@ function Guest() {
   return <h2>Signup</h2>;
 }
 
-function Login(props) {
-  const isLogged = props.login;
-  if (isLogged) {
-    return <Greetings />;
+function Button(props) {
+  const isClicked = props.isClick;
+  if (isClicked) {
+    return <button>LoggedIn</button>;
   }
-  return <Guest />;
+  return <button>LoggedOut</button>;
 }
 
-const element = <Login login={true} />;
+const element = <Button isClick={true} />;
 
 ReactDOM.render(element, document.getElementById("root"));

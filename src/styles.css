@@ -2,3 +2,43 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#developerImg {
+  height: 60%;
+  margin-top: 100px;
+}
+#headtitle {
+  margin: 100px;
+  font-size: 72px;
+  color: white;
+  font-family: "Times New Roman";
+}
+.head {
+  height: 600px;
+  background-color: #2f2e41;
+}
+.subhead {
+  margin: 50px;
+  text-align: center;
+  font-size: 56px;
+  color: #3f3d56;
+}
+
+hr {
+  width: 700px;
+}
+
+#searchtext {
+  height: 80px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 40%;
+  font-size: 24px;
+}
+.search {
+  height: 82px;
+}

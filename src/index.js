@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles.css";
-import image from "./Images/undraw_dev_productivity_umsq 1.png";
-
+import devimage from "./Images/undraw_dev_productivity_umsq 1.png";
+import searchicon from "./Images/search-24px.svg";
 function Heading(props) {
   const content = props.content;
   const id = props.id;
@@ -28,7 +28,18 @@ function Search(props) {
   return (
     <div className="search">
       <Input id={props.id} type={props.type} placeholder={props.placeholder} />
+      <button id="searchbutton">
+        <Image src={searchicon} id="searchicon" />
+      </button>
     </div>
+  );
+}
+
+function Footer() {
+  return (
+    <footer class="footer">
+      <p>made with &#129293; by Naveen</p>
+    </footer>
   );
 }
 
@@ -36,7 +47,7 @@ const main = (
   <div className="content">
     <div className="head">
       <Heading id={"headtitle"} content={"The Developer Repository"} />
-      <Image id={"developerImg"} src={image} alt={"developer"} />
+      <Image id={"developerImg"} src={devimage} alt={"developer"} />
     </div>
     <div className="subcontent">
       <div className="subhead">
@@ -44,7 +55,11 @@ const main = (
       </div>
       <hr />
       <Search type="text" id="searchtext" placeholder="Search for username" />
+      <hr />
+      <p>Could not find what you are looking for ?</p>
+      <button id="addDev">Add developer Info</button>
     </div>
+    <Footer />
   </div>
 );
 

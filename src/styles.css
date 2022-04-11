@@ -8,13 +8,13 @@
   grid-template-columns: 1fr 1fr;
 }
 #developerImg {
-  height: 70%;
-  width: 70%;
+  height: 20em;
+  width: 10em;
   margin-top: 50px;
 }
 #headtitle {
   margin: 50px;
-  font-size: 300%;
+  font-size: 1.5em;
   color: white;
   font-family: "Nunito Sans", sans-serif;
   font-weight: "semi-bold";

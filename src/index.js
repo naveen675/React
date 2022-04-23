@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { useNavigate } from "react-router-dom";
 import "./styles.css";
 import devimage from "./Images/undraw_dev_productivity_umsq 1.png";
 import searchicon from "./Images/search-24px.svg";
@@ -44,6 +45,16 @@ function Footer() {
   );
 }
 
+const OpenForm = () => {
+  const navigate = useNavigate();
+
+  return (
+    <button id="addDev" onClick={() => navigate("/form")}>
+      Add developer Info
+    </button>
+  );
+};
+
 const main = (
   <div className="content">
     <div className="head">
@@ -58,7 +69,7 @@ const main = (
       <Search type="text" id="searchtext" placeholder="Search for username" />
       <hr />
       <p>Could not find what you are looking for ?</p>
-      <button id="addDev">Add developer Info</button>
+      <OpenForm />
     </div>
     <Footer />
   </div>

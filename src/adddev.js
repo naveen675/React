@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 
 function AddDev() {
   const navigate = useNavigate();
-
   return (
     <React.Fragment>
       <button id="addDev" onClick={() => navigate("/form")}>
@@ -12,3 +11,5 @@ function AddDev() {
     </React.Fragment>
   );
 }
+
+export default AddDev;

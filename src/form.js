@@ -61,6 +61,4 @@ function Form() {
   );
 }
 
-const form = <Form />;
-
-ReactDom.render(form, document.getElementById("root"));
+export default Form;

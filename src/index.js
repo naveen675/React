@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./styles.css";
 import devimage from "./Images/undraw_dev_productivity_umsq 1.png";
 import searchicon from "./Images/search-24px.svg";
+import AddDev from "./adddev.js";
 
 function Heading(props) {
   const content = props.content;
@@ -71,6 +72,7 @@ const main = (
       <p>Could not find what you are looking for ?</p>
       <OpenForm />
     </div>
+
     <Footer />
   </div>
 );

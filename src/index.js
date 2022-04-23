@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { useNavigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles.css";
 import devimage from "./Images/undraw_dev_productivity_umsq 1.png";
 import searchicon from "./Images/search-24px.svg";
-import AddDev from "./adddev.js";
+import AddDev from "./adddev";
 
 function Heading(props) {
   const content = props.content;

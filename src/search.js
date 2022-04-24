@@ -1,4 +1,5 @@
-import searchicon from "./Images/search-24px.svg";
+import searchicon from './Images/search-24px.svg';
+import React from 'react';
 
 function Image(props) {
   const src = props.src;

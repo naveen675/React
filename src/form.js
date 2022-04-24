@@ -6,7 +6,7 @@ import codecheficon from "./Images/codechef-1324440139527402917_32.png";
 import hackericon from "./Images/iconfinder_160_Hackerrank_logo_logos_4373234.png";
 import twitericon from "./Images/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.png";
 import mediumicon from "./Images/iconfinder_Circled_Medium_svg5_5279113.png";
-
+import { useLocation } from "react-router-dom";
 function Input(props) {
   var id = props.id;
   var type = props.type;

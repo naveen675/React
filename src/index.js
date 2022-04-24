@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Router, Routes, Route } from "react-router-dom";
+import { Router, Routes, Route, BrowserRouter } from "react-router-dom";
 import "./styles.css";
 import Search from "./search";
 import AddDev from "./adddev";
 import Footer from "./footer";
 import Header from "./heading";
 import Form from "./form";
+import Index from "./index";
 
 const main = (
   <div className="content">
@@ -22,11 +23,13 @@ const main = (
       <hr />
       <p>Could not find what you are looking for ?</p>
       <AddDev />
-      <Router>
+      {/* <BrowserRouter>
         <Routes>
           <Route exact path="/adddev" element={<AddDev />} />
+          <Route exact path="/form" element={<Form />} />
+          <Route path="/" element={<Index />} />
         </Routes>
-      </Router>
+      </BrowserRouter> */}
     </div>
 
     <Footer />

@@ -1,13 +1,22 @@
 import React from "react";
 
 
-function Developers(){
+function Developers(props){
+
+    var ids = props.ids;
+    const element = ids.map((id) => 
+        <div className="developer"> {id}</div>
+    );
+
+
+
 
     return (
         <React.Fragment>
-            <div>
-                <h1>Developers</h1>
+            <div className="developers">
+                {element}
             </div>
+            
         </React.Fragment>
     );
 }

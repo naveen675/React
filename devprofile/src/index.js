@@ -12,6 +12,8 @@ import Adddev from "./adddev"
 import Form from "./form";
 import Developers from "./developers";
 
+var ids = ['naveen675', 'facebook',"sai"];
+
 
 const app= (<React.Fragment>
   <div className="content">
@@ -24,7 +26,7 @@ const app= (<React.Fragment>
       </div>
       <hr />
       <Search type="text" id="searchtext" placeholder="Search for username" />
-      <Developers />
+      <Developers ids={ids} />
       <hr />
       <p>Could not find what you are looking for ?</p>
       {/* <AddDev /> */}

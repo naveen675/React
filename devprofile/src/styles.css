@@ -119,3 +119,16 @@
   .devAddform img {
     height: 1em;
   }
+  .developers{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      font-family: "Nunito Sans", sans-serif;
+      width: 35%;
+      margin-left : 35%;
+      margin-right: 35%;
+  }
+
+  .developer{
+      display: block;
+  }

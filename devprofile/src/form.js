@@ -5,6 +5,7 @@ import codecheficon from './Images/codechef-1324440139527402917_32.png';
 import hackericon from './Images/iconfinder_160_Hackerrank_logo_logos_4373234.png';
 import twitericon from './Images/iconfinder_2018_social_media_popular_app_logo_twitter_3225183.png';
 import mediumicon from './Images/iconfinder_Circled_Medium_svg5_5279113.png';
+import {useNavigate} from 'react-router-dom';
 
 function Input(props) {
   var id = props.id;
@@ -22,6 +23,9 @@ function Image(props) {
 }
 
 function Form() {
+
+    const navigate = useNavigate();
+
   return (
     <form className="devAddform">
       <label>
@@ -54,8 +58,8 @@ function Form() {
         Medium
       </label>
       <Input type={'text'} id={'mediumin'} />
-      <button id={'devformsubmit'}> Submit </button>
-      <button id={'devformcancel'}> Cancel </button>
+      <button id={'devformsubmit'} onClick= {() => navigate('/')} >Submit </button>
+      <button id={'devformcancel'} onClick = {() => navigate('/form')}> Cancel </button>
     </form>
   );
 }

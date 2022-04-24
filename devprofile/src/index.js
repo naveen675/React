@@ -10,10 +10,9 @@ import Footer from "./footer";
 import './styles.css';
 import Adddev from "./adddev"
 import Form from "./form";
-import Index from "./index";
 
 
-const element = (<React.Fragment>
+const app= (<React.Fragment>
   <div className="content">
     <div className="head">
       <Header id={'headtitle'} content={'The Developer Repository'} />
@@ -32,15 +31,15 @@ const element = (<React.Fragment>
     <Footer />
   </div>
   </React.Fragment>
-)
-const root = ReactDOM.render(element,document.getElementById('root') );
+);
 
-root.render(
+ReactDOM.createRoot(document.getElementById('root') ).render(
   <BrowserRouter>
     <Routes>
+    <Route exact path="/" element={app} />
       <Route exact path="/adddev" element={<Adddev />} />
       <Route exact path="/form" element={<Form />} />
-      <Route path="/" element={<Index />} />
+      
       <Route path="/app" element={<App />} />
     </Routes>
   </BrowserRouter>
@@ -51,4 +50,4 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-export default element;
+export default app;

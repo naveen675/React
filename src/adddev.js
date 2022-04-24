@@ -12,11 +12,3 @@ function AddDev() {
 }
 
 export default AddDev;
-
-{
-  /* <React.Fragment>
-  <button id="addDev">
-    <Link to="/form">Add developer Info</Link>
-  </button>
-</React.Fragment>; */
-}

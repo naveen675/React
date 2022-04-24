@@ -10,6 +10,7 @@ import Footer from "./footer";
 import './styles.css';
 import Adddev from "./adddev"
 import Form from "./form";
+import Developers from "./developers";
 
 
 const app= (<React.Fragment>
@@ -23,6 +24,7 @@ const app= (<React.Fragment>
       </div>
       <hr />
       <Search type="text" id="searchtext" placeholder="Search for username" />
+      <Developers />
       <hr />
       <p>Could not find what you are looking for ?</p>
       {/* <AddDev /> */}

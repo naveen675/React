@@ -8,8 +8,10 @@ import mediumicon from './Images/iconfinder_Circled_Medium_svg5_5279113.png';
 import {useNavigate} from 'react-router-dom';
 
 function GetGithubData(githubId){
+
+    console.log('${githubId}');
     
-    const data = fetch(`http://localhost:3000/api/developers/${githubId}`).then((response) => {console.log(response)});
+    //const data = fetch(`http://localhost:3000/api/developers/${githubId}`).then((response) => {console.log(response)});
 
 }
 
